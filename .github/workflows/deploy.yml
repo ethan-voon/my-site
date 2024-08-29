@@ -18,9 +18,11 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
+        working-directory: ./VoonFluentBlazor
         run: dotnet restore
 
       - name: Publish Blazor WebAssembly app
+        working-directory: ./VoonFluentBlazor
         run: dotnet publish -c Release -o output
 
       - name: Deploy to GitHub Pages
