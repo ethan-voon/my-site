@@ -25,17 +25,14 @@ jobs:
         working-directory: ./VoonFluentBlazor
         run: dotnet publish -c Release -o output
 
-      - name: DEBUG List output directory contents
-        run: ls -R ./VoonFluentBlazor/output
-
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
-          git checkout gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
           rm -rf *
-          cp -r ./VoonFluentBlazor/output/wwwroot/* .
+          cp -r ./VoonFluentBlazor/output/wwwroot .
           git add .
-          git commit -m "Deploy to GitHub Pages"
+          git diff-index --quiet HEAD || git commit -m "Deploy to GitHub Pages"
           git push origin gh-pages
