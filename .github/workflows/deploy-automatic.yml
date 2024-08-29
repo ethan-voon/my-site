@@ -25,6 +25,12 @@ jobs:
         working-directory: ./VoonFluentBlazor
         run: dotnet publish -c Release -o output
 
+      - name: DEBUG List directory contents
+        run: ls
+
+      - name: DEBUG List output directory contents
+        run: ls -R output
+
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "github-actions[bot]"
