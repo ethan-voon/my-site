@@ -17,7 +17,7 @@
     {
         if (context.Path is "" or "/")
         {
-            Navigation.NavigateTo($"{Navigation.BaseUri}home", replace: true);
+            Navigation.NavigateTo($"{Navigation.Uri}home", replace: true);
         }
     }
 }
