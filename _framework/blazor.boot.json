@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "VoonFluentBlazor",
   "resources": {
-    "hash": "sha256-YAY5FlzkswgMMjqEjOmho775GtpdN3MC53+8qkxnb5g=",
+    "hash": "sha256-a3fVFc8SvD10GDWiO52NMz2PFkaVkwzwXBvGdN7FLnM=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.746giovk6l.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -60,7 +60,7 @@
       "System.Text.Json.wasm": "sha256-zXJx6i/7lnEgdOaesjn34qhxyZWkKxqxhr08RyFDz88=",
       "System.Text.RegularExpressions.wasm": "sha256-3YU2VEF7BUt4BBRwooG+MZf68VXtzyyzxtzrSqVWLGM=",
       "System.wasm": "sha256-ka1SPMSVGn53xDzeBa40FQCsprKEF+n+wpvvd1HyMNE=",
-      "VoonFluentBlazor.wasm": "sha256-ojO6bwRbTmFz/SNthvIwpUkSLCxK+DBBeHv31gdN/Rk="
+      "VoonFluentBlazor.wasm": "sha256-Zp5flUEx5Sv2ydRy/758BgypIuCQ50gJsvIf/jiycKE="
     },
     "libraryInitializers": {
       "_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.lib.module.js": "sha256-CJSrqExCwsiltOwG2tCAKuAjlrX6Q1YCkl3ABK4Cptc="
