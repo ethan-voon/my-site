@@ -24,8 +24,8 @@ jobs:
         run: dotnet publish ./VoonFluentBlazor/VoonFluentBlazor.csproj -c Release -o release --nologo
 
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-      - name: Change base-tag in index.html from / to VoonFluentBlazor
-        run: sed -i 's/<base href="\/" \/>/<base href="\/VoonFluentBlazor\/" \/>/g' release/wwwroot/index.html
+      - name: Change base-tag in index.html from / to my-site
+        run: sed -i 's/<base href="\/" \/>/<base href="\/my-site\/" \/>/g' release/wwwroot/index.html
 
       # copy index.html to 404.html to serve the same file when a file is not found
       - name: copy index.html to 404.html
